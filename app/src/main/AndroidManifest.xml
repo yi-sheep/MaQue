@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.gaoxianglong.maque">
+    <!-- 读取系统联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--    读取通话记录-->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--  读取外部存储  -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--  写外部存储  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--  相机  -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:name=".context.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ContactInformationActivity"></activity>
+        <activity
+            android:name=".NewContactActivity"
+            android:label="新建联系人"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="联系人">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

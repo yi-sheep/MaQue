@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewContactActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/gridlayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="20dp"
+                app:columnCount="3"
+                app:rowCount="2"
+                android:background="@drawable/bj_et">
+
+                <LinearLayout
+                    android:id="@+id/ll_black"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bj_no"
+                    android:gravity="center"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_title_black"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="10dp"
+                        android:src="@drawable/img_purple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_pink"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bj_no"
+                    android:gravity="center"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_title_pink"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="10dp"
+                        android:src="@drawable/img_pink" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_blue"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bj_no"
+                    android:gravity="center"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_title_blue"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="10dp"
+                        android:src="@drawable/img_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_red"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bj_no"
+                    android:gravity="center"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_title_red"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="10dp"
+                        android:src="@drawable/img_red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bj_no"
+                    android:gravity="center"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_title_yellow"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="10dp"
+                        android:src="@drawable/img_orange" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_other"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bj_no"
+                    android:gravity="center"
+                    app:layout_columnWeight="1"
+                    app:layout_rowWeight="1">
+
+                    <ImageView
+                        android:id="@+id/img_title_other"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_image" />
+                </LinearLayout>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gridlayout"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:id="@+id/sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="性别："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:checked="true"
+                            android:text="男"
+                            android:paddingRight="4dp"
+                            android:background="@drawable/bj_et"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="女"
+                            android:paddingRight="4dp"
+                            android:background="@drawable/bj_et"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/nan_name"
+                        android:inputType="textPersonName"
+                        android:maxLength="10"
+                        android:background="@drawable/bj_et"
+                        android:padding="6dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="号码："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/nan_number"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:digits="0123456789"
+                        android:padding="6dp"
+                        android:background="@drawable/bj_et"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="备注："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_remarks"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/nan_remarks"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:padding="6dp"
+                        android:background="@drawable/bj_et"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Q Q："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_qq"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/nan_qq"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:digits="0123456789"
+                        android:padding="6dp"
+                        android:background="@drawable/bj_et"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="生日："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_birthday"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/nan_birthday"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:padding="6dp"
+                        android:background="@drawable/bj_et"/>
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="描述："
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/et_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tx"
+                        android:ems="10"
+                        android:hint="@string/nan_describe"
+                        android:inputType="textMultiLine"
+                        android:minLines="4"
+                        android:maxLength="20"
+                        android:gravity="top"
+                        android:padding="4dp"
+                        android:background="@drawable/bj_et"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_done" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

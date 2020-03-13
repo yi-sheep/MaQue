@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="20dp"
+        app:columnCount="3"
+        app:rowCount="2"
+        android:background="@drawable/bj_et">
+
+        <LinearLayout
+            android:id="@+id/ll_black"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bj_no"
+            android:gravity="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_dialog_black"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/img_purple" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pink"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bj_no"
+            android:gravity="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_dialog_pink"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/img_pink" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_blue"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bj_no"
+            android:gravity="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_dialog_blue"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/img_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_red"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bj_no"
+            android:gravity="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_dialog_red"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/img_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_yellow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bj_no"
+            android:gravity="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_dialog_yellow"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/img_orange" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_other"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bj_no"
+            android:gravity="center"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <ImageView
+                android:id="@+id/img_dialog_other"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_image" />
+        </LinearLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:background="@color/colorTransparent"/>
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定"
+            android:background="@color/colorTransparent"/>
+    </LinearLayout>
+
+</LinearLayout>

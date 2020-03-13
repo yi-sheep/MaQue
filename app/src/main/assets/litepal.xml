@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="Contacts" />
+
+
+    <version value="1" />
+
+
+    <list>
+        <mapping class="com.gaoxianglong.maque.db.TelephoneBook"/>
+        <mapping class="com.gaoxianglong.maque.db.Contacts"/>
+    </list>
+
+
+
+</litepal>

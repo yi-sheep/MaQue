@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#474554</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D5B09D</color>
+    <color name="colorTransparent">#00000000</color>
+
+<!--    界面-->
+    <color name="bg">#EDEDED</color>
+    <color name="text">#211F2D</color>
+<!--   控件 -->
+    <color name="viewBg">#787586</color>
+    <color name="viewText">#E5F3F4</color>
+<!--    item-->
+    <color name="itemBg">#E8E1D1</color>
+</resources>

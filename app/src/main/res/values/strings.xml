@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MaQue</string>
+
+
+    <!--    性别-->
+    <string name="nan_name">他的姓名是：</string>
+    <string name="nan_number">他的号码是：</string>
+    <string name="nan_remarks">你称呼他为：</string>
+    <string name="nan_qq">记上他的QQ别忘了：</string>
+    <string name="nan_birthday">要是记得他生日他一点会很开心：</string>
+    <string name="nan_describe">用动人的词汇描述他</string>
+
+    <string name="nv_name">她的姓名是：</string>
+    <string name="nv_number">她的号码是：</string>
+    <string name="nv_remarks">你称呼她为:</string>
+    <string name="nv_qq">记上她的QQ别忘了</string>
+    <string name="nv_birthday">要是记得她生日她一点会很开心：</string>
+    <string name="nv_describe">用动人的词汇描述她</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+<!--    信息界面-->
+    <string name="i_name">姓名：</string>
+    <string name="i_sex">性别：</string>
+    <string name="i_number">号码：</string>
+    <string name="i_remarks">备注：</string>
+    <string name="i_qq">Q Q：</string>
+    <string name="i_birthday">生日：</string>
+    <string name="i_describe">描述：</string>
+    <string name="i_et_btn">编辑</string>
+</resources>
